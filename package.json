@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "set APP_ENV=%TEST_ENV%&next dev",
+    "build": "set APP_ENV=%TEST_ENV%&next build",
+    "start": "set APP_ENV=%TEST_ENV%&next start",
     "lint": "next lint"
   },
   "dependencies": {
